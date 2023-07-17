@@ -34,7 +34,7 @@ export default function Home() {
           <Formik
             initialValues={initialVAlues}
             onSubmit={async (values) => {
-              const rta = await fetch(`${process.env.NEXT_PUBLIC_API}/contact`, {
+              const rta = await fetch(`/api/contact`, {
                 method: "POST",
                 headers: {
                   "Content-type": "Application/json"
